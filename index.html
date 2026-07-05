@@ -27,9 +27,9 @@
           <span>Jumin Park</span>
         </a>
         <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#profile">Profile</a>
           <a href="#engineering">Cloud Platform</a>
           <a href="#research">Harness</a>
-          <a href="#profile">Profile</a>
         </nav>
         <div class="action-links" aria-label="External profile links">
           <a href="https://www.linkedin.com/in/jumin-park-6b538a3a7/" aria-label="LinkedIn profile">LinkedIn</a>
@@ -40,6 +40,48 @@
     </header>
 
     <main id="top">
+      <section class="shell profile-section" id="profile" aria-labelledby="profile-title">
+        <div class="profile-intro">
+          <img
+            class="profile-photo"
+            src="assets/jumin-park-profile.png"
+            width="160"
+            height="160"
+            alt="Jumin Park profile photo"
+          >
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2 id="profile-title">Jumin Park</h2>
+            <p class="profile-headline">LLM platform engineering on Kubernetes</p>
+          </div>
+        </div>
+        <div class="profile-body">
+          <dl class="profile-facts" aria-label="Profile facts">
+            <div>
+              <dt>소속</dt>
+              <dd>GIST Network Intelligence Lab</dd>
+            </div>
+            <div>
+              <dt>학력</dt>
+              <dd>광주과학기술원</dd>
+            </div>
+            <div>
+              <dt>기록</dt>
+              <dd>Kubernetes, Agentic AI Harness, SLM Distillation</dd>
+            </div>
+          </dl>
+          <p>
+            GIST Network Intelligence Lab에서 클라우드, 네트워크, AI 시스템이 만나는 문제를
+            공부하고 있습니다. Kubernetes를 중심으로 LLM/SLM serving 플랫폼을 구성하고,
+            DGX Spark 노드 2개를 QSFP 케이블로 연결해 NCCL 통신과 병목을 확인하고 있습니다.
+          </p>
+          <p>
+            동시에 Agentic AI harness를 통해 tool use와 task trace를 기록하고, LLM teacher가
+            만든 trajectory를 SLM distillation과 평가 루프로 연결하는 방법을 실험하고 있습니다.
+          </p>
+        </div>
+      </section>
+
       <section class="shell category-hero" aria-labelledby="page-title">
         <p class="eyebrow">Kubernetes Engineering</p>
         <h1 id="page-title">Kubernetes 기반<br><span class="nowrap">AI 시스템 기록</span></h1>
@@ -48,10 +90,11 @@
           DGX Spark/NCCL 실험을 기록합니다.
         </p>
         <div class="tag-rail" aria-label="Topics">
+          <a class="tag" href="#profile">Profile</a>
           <a class="tag active" href="#engineering">Kubernetes</a>
           <a class="tag" href="#research">Agentic AI Harness</a>
           <a class="tag" href="#serving">SLM Distillation</a>
-          <a class="tag" href="#profile">NCCL</a>
+          <a class="tag" href="#engineering">NCCL</a>
           <a class="tag" href="#serving">Model Serving</a>
         </div>
       </section>
@@ -142,47 +185,6 @@
         </article>
       </section>
 
-      <section class="shell profile-section" id="profile" aria-labelledby="profile-title">
-        <div class="profile-intro">
-          <img
-            class="profile-photo"
-            src="assets/jumin-park-profile.png"
-            width="160"
-            height="160"
-            alt="Jumin Park profile photo"
-          >
-          <div>
-            <p class="eyebrow">Profile</p>
-            <h2 id="profile-title">Jumin Park</h2>
-            <p class="profile-headline">LLM platform engineering on Kubernetes</p>
-          </div>
-        </div>
-        <div class="profile-body">
-          <dl class="profile-facts" aria-label="Profile facts">
-            <div>
-              <dt>소속</dt>
-              <dd>GIST Network Intelligence Lab</dd>
-            </div>
-            <div>
-              <dt>학력</dt>
-              <dd>광주과학기술원</dd>
-            </div>
-            <div>
-              <dt>기록</dt>
-              <dd>Kubernetes, Agentic AI Harness, SLM Distillation</dd>
-            </div>
-          </dl>
-          <p>
-            GIST Network Intelligence Lab에서 클라우드, 네트워크, AI 시스템이 만나는 문제를
-            공부하고 있습니다. Kubernetes를 중심으로 LLM/SLM serving 플랫폼을 구성하고,
-            DGX Spark 노드 2개를 QSFP 케이블로 연결해 NCCL 통신과 병목을 확인하고 있습니다.
-          </p>
-          <p>
-            동시에 Agentic AI harness를 통해 tool use와 task trace를 기록하고, LLM teacher가
-            만든 trajectory를 SLM distillation과 평가 루프로 연결하는 방법을 실험하고 있습니다.
-          </p>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">

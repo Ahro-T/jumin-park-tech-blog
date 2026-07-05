@@ -395,6 +395,11 @@ a:focus-visible {
   border-top: 1px solid var(--border-subtle);
 }
 
+main > .profile-section:first-child {
+  padding-top: var(--space-12);
+  border-top: 0;
+}
+
 .profile-intro {
   display: grid;
   gap: var(--space-6);

@@ -27,9 +27,9 @@
           <span>Jumin Park</span>
         </a>
         <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#profile">Profile</a>
           <a href="#engineering">Cloud Platform</a>
           <a href="#research">Harness</a>
-          <a href="#profile">Profile</a>
         </nav>
         <div class="action-links" aria-label="External profile and language links">
           <a href="https://www.linkedin.com/in/jumin-park-6b538a3a7/" aria-label="LinkedIn profile">LinkedIn</a>
@@ -40,6 +40,48 @@
     </header>
 
     <main id="top">
+      <section class="shell profile-section" id="profile" aria-labelledby="profile-title">
+        <div class="profile-intro">
+          <img
+            class="profile-photo"
+            src="assets/jumin-park-profile.png"
+            width="160"
+            height="160"
+            alt="Jumin Park profile photo"
+          >
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2 id="profile-title">Jumin Park</h2>
+            <p class="profile-headline">LLM platform engineering on Kubernetes</p>
+          </div>
+        </div>
+        <div class="profile-body">
+          <dl class="profile-facts" aria-label="Profile facts">
+            <div>
+              <dt>Affiliation</dt>
+              <dd>GIST Network Intelligence Lab</dd>
+            </div>
+            <div>
+              <dt>Education</dt>
+              <dd>Gwangju Institute of Science and Technology</dd>
+            </div>
+            <div>
+              <dt>Notes</dt>
+              <dd>Kubernetes, Agentic AI Harness, SLM Distillation</dd>
+            </div>
+          </dl>
+          <p>
+            At GIST Network Intelligence Lab, I study problems where cloud, networking, and AI systems meet.
+            I use Kubernetes as the base for LLM/SLM serving platforms and investigate NCCL communication
+            across two DGX Spark nodes connected with QSFP.
+          </p>
+          <p>
+            I am also experimenting with Agentic AI harnesses that record tool use and task traces,
+            then connect LLM-teacher trajectories to SLM distillation and evaluation workflows.
+          </p>
+        </div>
+      </section>
+
       <section class="shell category-hero" aria-labelledby="page-title">
         <p class="eyebrow">Kubernetes Engineering</p>
         <h1 id="page-title">Kubernetes-first<br><span class="nowrap">AI systems notes</span></h1>
@@ -47,10 +89,11 @@
           Notes on LLM platforms, agent harnesses, SLM distillation, and DGX Spark/NCCL experiments.
         </p>
         <div class="tag-rail" aria-label="Topics">
+          <a class="tag" href="#profile">Profile</a>
           <a class="tag active" href="#engineering">Kubernetes</a>
           <a class="tag" href="#research">Agentic AI Harness</a>
           <a class="tag" href="#serving">SLM Distillation</a>
-          <a class="tag" href="#profile">NCCL</a>
+          <a class="tag" href="#engineering">NCCL</a>
           <a class="tag" href="#serving">Model Serving</a>
         </div>
       </section>
@@ -138,47 +181,6 @@
         </article>
       </section>
 
-      <section class="shell profile-section" id="profile" aria-labelledby="profile-title">
-        <div class="profile-intro">
-          <img
-            class="profile-photo"
-            src="assets/jumin-park-profile.png"
-            width="160"
-            height="160"
-            alt="Jumin Park profile photo"
-          >
-          <div>
-            <p class="eyebrow">Profile</p>
-            <h2 id="profile-title">Jumin Park</h2>
-            <p class="profile-headline">LLM platform engineering on Kubernetes</p>
-          </div>
-        </div>
-        <div class="profile-body">
-          <dl class="profile-facts" aria-label="Profile facts">
-            <div>
-              <dt>Affiliation</dt>
-              <dd>GIST Network Intelligence Lab</dd>
-            </div>
-            <div>
-              <dt>Education</dt>
-              <dd>Gwangju Institute of Science and Technology</dd>
-            </div>
-            <div>
-              <dt>Notes</dt>
-              <dd>Kubernetes, Agentic AI Harness, SLM Distillation</dd>
-            </div>
-          </dl>
-          <p>
-            At GIST Network Intelligence Lab, I study problems where cloud, networking, and AI systems meet.
-            I use Kubernetes as the base for LLM/SLM serving platforms and investigate NCCL communication
-            across two DGX Spark nodes connected with QSFP.
-          </p>
-          <p>
-            I am also experimenting with Agentic AI harnesses that record tool use and task traces,
-            then connect LLM-teacher trajectories to SLM distillation and evaluation workflows.
-          </p>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
