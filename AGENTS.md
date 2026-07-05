@@ -14,6 +14,8 @@ No framework, package manager, build step, test runner, or CI config exists in t
 ```text
 jumin-park-tech-blog/
 |-- index.html   # full page markup, navigation anchors, Korean/English content
+|-- en.html      # English version of the same page structure
+|-- assets/      # local static images used by the pages
 |-- styles.css   # all layout, tokens, responsive behavior, and thumbnail artwork
 |-- DESIGN.md    # authoritative visual system and interaction constraints
 |-- README.md    # short project purpose and GitHub Pages URL
@@ -24,7 +26,8 @@ jumin-park-tech-blog/
 
 | Task | Location | Notes |
 | --- | --- | --- |
-| Change visible content | `index.html` | Preserve semantic `header`, `nav`, `main`, `section`, `article`, `footer` structure. |
+| Change visible content | `index.html`, `en.html` | Keep Korean and English pages structurally aligned. |
+| Change local media | `assets/` | Keep user profile images local instead of hotlinking expiring CDN URLs. |
 | Change layout or visual style | `styles.css` | Keep tokenized colors/spacing in `:root`; avoid one-off inline styling. |
 | Check design intent | `DESIGN.md` | Treat as source of truth before adjusting typography, spacing, motion, or surfaces. |
 | Update deployment target docs | `README.md`, `index.html` | Canonical URL points to GitHub Pages. |
@@ -34,6 +37,7 @@ jumin-park-tech-blog/
 | Surface | Type | Location | Role |
 | --- | --- | --- | --- |
 | `<main id="top">` | page root | `index.html` | Main scroll target and content container. |
+| `<main id="top">` | page root | `en.html` | English page equivalent. |
 | `#engineering` | section | `index.html` | Recent engineering notes list. |
 | `#serving` | article anchor | `index.html` | Agentic AI harness note and tag target. |
 | `#research` | section/article anchor | `index.html` | SLM distillation content and nav target. |
@@ -45,6 +49,7 @@ jumin-park-tech-blog/
 ## CONVENTIONS
 
 - This is plain HTML/CSS. Do not introduce a framework, bundler, package manifest, or generated asset pipeline unless explicitly requested.
+- Keep `index.html` and `en.html` as paired language versions: same sections, anchors, and toggle behavior.
 - Use `DESIGN.md` as the design contract: quiet editorial technical blog, not a portfolio poster or SaaS dashboard.
 - Keep content left-aligned inside the centered `1024px` shell; reading copy should stay near the documented `720px` width.
 - Preserve the Korean-first font stack and natural Korean/English wrapping.
@@ -59,7 +64,7 @@ jumin-park-tech-blog/
 - Do not convert article rows into floating cards; the design calls for bordered editorial rows.
 - Do not animate decorative effects. Motion is limited to `transform`, `opacity`, and `color`.
 - Do not remove `prefers-reduced-motion` handling.
-- Do not treat `mailto:hello@example.com` as a verified contact address; it is a placeholder.
+- Do not add contact addresses that the user has not explicitly provided.
 - Do not rely on tests or scripts that are not present in the repo.
 
 ## COMMANDS

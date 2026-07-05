@@ -110,6 +110,13 @@ All spacing derives from a base of `4px`.
 - **States**: active tag uses `--accent-soft`; hover changes text to `--text-primary`.
 - **Accessibility**: links remain text links, not fake buttons.
 
+### Profile Section
+- **Structure**: local profile image, name, short headline, facts list, and two concise body paragraphs.
+- **Image**: `160px x 160px` desktop, `96px x 96px` mobile; `8px` radius with a subtle border.
+- **Facts**: label/value rows with `104px` label column on desktop and stacked rows on mobile.
+- **Accessibility**: meaningful image alt text; facts use a semantic `dl`.
+- **Motion**: none.
+
 ## 6. Motion & Interaction
 
 ### Timing
