@@ -4,4 +4,4 @@ Personal technical blog for LLM platform engineering, DGX Spark/NCCL experiments
 
 Published with GitHub Pages at:
 
-https://pjm3863966.github.io/jumin-park-tech-blog/
+https://ahro-t.github.io/jumin-park-tech-blog/
