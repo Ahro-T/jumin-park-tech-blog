@@ -98,10 +98,10 @@ All spacing derives from a base of `4px`.
 - **Accessibility**: single page `h1`.
 
 ### Article Row
-- **Structure**: category, title, summary, metadata, optional thumbnail.
+- **Structure**: native `details` row with category, title, metadata, toggle label, expanded summary, optional thumbnail.
 - **Spacing**: `--space-8` gap, `--space-10` vertical padding.
-- **States**: row title and thumbnail respond on hover/focus.
-- **Accessibility**: whole title is a link, row has clear text contrast.
+- **States**: row title and thumbnail respond on hover/focus; expanded rows keep the title blue and reveal body copy below the metadata.
+- **Accessibility**: use `summary` for the interactive control; keep focus visible and text contrast clear.
 - **Motion**: `180ms ease-out` color and transform on thumbnail only.
 
 ### Tag Rail

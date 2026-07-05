@@ -230,6 +230,22 @@ a:focus-visible {
   display: block;
 }
 
+.article-summary {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+}
+
+.article-summary::-webkit-details-marker {
+  display: none;
+}
+
+.article-summary:focus-visible {
+  outline: 3px solid var(--accent-soft);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
 .article-copy h3 {
   max-width: 720px;
   margin: var(--space-2) 0 var(--space-2);
@@ -240,16 +256,42 @@ a:focus-visible {
   transition: color 160ms ease-out;
 }
 
-.article-copy p {
+.article-detail {
   max-width: 720px;
-  margin: 0 0 var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.article-detail p {
+  max-width: 720px;
+  margin: 0;
   color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.6;
 }
 
+.toggle-label {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: var(--space-3);
+  color: var(--accent-primary);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.toggle-close,
+.article-copy[open] .toggle-open {
+  display: none;
+}
+
+.article-copy[open] .toggle-close {
+  display: inline;
+}
+
 .article-row:hover h3,
-.article-copy:focus-visible h3 {
+.article-copy[open] h3,
+.article-summary:focus-visible h3 {
   color: var(--accent-primary);
 }
 
@@ -264,6 +306,10 @@ a:focus-visible {
 }
 
 .article-row:hover .article-thumb {
+  transform: translateY(-2px);
+}
+
+.article-copy[open] + .article-thumb {
   transform: translateY(-2px);
 }
 

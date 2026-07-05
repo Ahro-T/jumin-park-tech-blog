@@ -1,6 +1,6 @@
 # Jumin Park Tech Blog
 
-Personal technical blog for LLM platform engineering, DGX Spark/NCCL experiments, and model serving notes.
+Kubernetes-first AI systems notes.
 
 Published with GitHub Pages at:
 
